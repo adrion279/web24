@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-3"><img src="img/ASG.png" alt="logo" height="55px"></div>
+            <div class="col-9">
+                <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                <nav id="menu">
+                    <ul class="text-right">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="parrafos.html">
+                                Párrafos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="enlaces.html">
+                                Enlaces
+                            </a>
+                        </li>
+                        <li>
+                            <a href="listas.html">
+                                Listas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tablas.html">
+                                Tablas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="formularios.html">
+                                Formularios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="multimedia.html">
+                                Multimedia
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <div id="parrafos" class="container80 p-3">
+            
+            <h2 class="text-center">Listas</h2>
+            <ol id="principal">
+                <li><h3>Lista Desordenada de la Compra</h3></li>
+                <ul>
+                    <li>Huevos</li>
+                    <li>Leche</li>
+                    <li>Carne</li>
+                    <li>Yogurt</li>
+                </ul>
+                <li><h3>Lista Ordenada Resultado Liga BBVA 23-24</h3></li>
+                <ol>
+                    <li>Real Madrid</li>
+                    <li>Fc Barcelona</li>
+                    <li>Girona</li>
+                    <li>Atletico de Madrid</li>
+                    <li>Athletic Club</li>
+                </ol>
+                <li><h3>Lista desordenada de varios niveles</h3></li>
+                <ul>
+                    <li>Julio Efren Leon Díaz
+                        <ul>
+                            <li>Programacion</li>    
+                                <ul>
+                                    <li>Java</li>
+                                </ul>
+                            <li>Base de Datos</li>
+                                <ul>
+                                    <li>Esquema Entidad-Relacion</li>
+                                    <li>SQL</li>
+                                    <li>PL-SQL</li>
+                                </ul>
+                            <li>Proyecto</li>
+                        </ul>
+                    </li>
+                    <li>Tomás Martinez Ruiz
+                        <ul>
+                            <li>SISI</li>
+                            <ul>
+                                <li>Redes</li>
+                                <li>Sistemas</li>
+                                <li>Hardware y SoftWare</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>Paco Pulido Moya
+                        <ul>
+                            <li>Lenguaje de Marcas</li>
+                                <ul>
+                                    <li>Html5, CSS3</li>
+                                    <li>XML</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                        </ul>
+                    </li>
+                </ul>
+                <li><h3>Lista Ordenada de varios niveles</h3></li>
+                <ol>
+                    <li>Real Madrid
+                        <ol>
+                            <li>Jude Bellingham</li>
+                            <li>Vinicius Jr</li>
+                        </ol>
+                    </li>
+                    <li>FC Barcelona
+                        <ol>
+                            <li>Robert Lewandoski</li>
+                            <li>Ferran Torres</li>
+                            
+                        </ol>
+                    </li>
+                    <li>Girona
+                        <ol>
+                            <li>Artem Davbyk</li>
+                            <li>Stuani</li>
+                        </ol>
+                    </li>
+                </ol>
+                <li><h3>Lista Desordenada de varios niveles Customizada</h3></li>
+                <ul id="ulcustom1">
+                    <li>Formula 1
+                        <ul>
+                            <li>Ferrari
+                                <ul>
+                                    <li>Lecrelc</li>
+                                    <li>Carlos Sainz</li>
+                                </ul>
+                            </li>
+                            
+                            <li>MClaren
+                                <ul>
+                                    <li>Lando Norris</li>
+                                    <li>Oscar Piastri</li>
+                                </ul>
+                            </li>
+
+                            <li>Mercedes
+                                <ul>
+                                    <li>Lewis Hamilton</li>
+                                    <li>George Russell</li>
+                                </ul>
+                            </li>
+                            <li>Aston Martin
+                                <ul>
+                                    <li>Fernando Alonso</li>
+                                    <li>Lance Stroll</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <li><h3>Lista Ordenada de varios niveles Customizada</h3></li>
+                <ol id="olcustom1">
+                    <li>File
+                        <ol>
+                            <li>Preferencias
+                                <ol>
+                                    <li>Perfil</li>
+                                    <li>Ajustes</li>
+                                </ol>
+                            </li>
+                            <li>Open recent
+                                <ol>
+                                    <li>More</li>
+                                    <li>Clean</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>Opciones Extras
+                        <ol>
+                            <li>Interfaz
+                                <ol>
+                                    <li>Modo Oscuro</li>
+                                    <li>Modo Claro</li>
+                                </ol>
+                            </li>
+                            <li>Pantalla
+                                <ol>
+                                    <li>Pantalla completa</li>
+                                    <li>Modo ventana</li>
+                                    <li>Modo ventana sin bordes</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <li><h3>Lista Desordenada de varios niveles Customizada con Imagenes</h3></li>
+                <ul id="ulcustom2">
+                    <li>Formula 1
+                        <ul>
+                            <li id="ulferrari">Ferrari
+                                <ul>
+                                    <li>Lecrelc</li>
+                                    <li>Carlos Sainz</li>
+                                </ul>
+                            </li>
+                            
+                            
+
+                            <li id="ulmercedes">Mercedes
+                                <ul>
+                                    <li>Lewis Hamilton</li>
+                                    <li>George Russell</li>
+                                </ul>
+                            </li>
+                            <li id="ulastonmartin">Aston Martin
+                                <ul>
+                                    <li>Fernando Alonso</li>
+                                    <li>Lance Stroll</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </ol>
+        </div>
+    </main>
+    <footer class="position-relative">
+        <div class="row align-items-center justify-content-between">
+            <div id="linkedinfooter" class="col-2">
+                <a href="https://www.linkedin.com/in/adri%C3%A1n-s%C3%A1nchez-garc%C3%ADa-063ba6274/"
+                    target="_blank"><img src="img/linkedin.png" alt="Enlace Linkedin"></a>
+            </div>
+            <div id="namefooter" class="col-7">
+                <h1 class="text-center text-white py-3">&copy; Adrián Sánchez</h1>
+            </div>
+
+            <div id="codefooter" class="col-2">
+                <a href="https://code.visualstudio.com/" target="_blank"><img src="img/code_70x70.png"
+                        alt="Enlace Linkedin" width=""></a>
+            </div>
+
+            <div class="cb"></div>
+        </div>
+    </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

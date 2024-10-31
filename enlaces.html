@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces en HTML5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-3"><img src="img/ASG.png" alt="logo" height="55px"></div>
+            <div class="col-9">
+                <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                <nav id="menu">
+                    <ul class="text-right">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="parrafos.html">
+                                Párrafos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="enlaces.html">
+                                Enlaces
+                            </a>
+                        </li>
+                        <li>
+                            <a href="listas.html">
+                                Listas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tablas.html">
+                                Tablas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="formularios.html">
+                                Formularios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="multimedia.html">
+                                Multimedia
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <div id="parrafos" class="container80 p-3">
+            <h2 class="text-center">Enlaces</h2>
+            <p>Los enlaces se insertan con la eiqueta <b class="tcgreen">a</b> y el enlace al que nos dirijiremos se
+                insertara en el atributo <b class="tcgreen">href</b>.</p>
+            <br>
+            <h3>Enlace a la pagina inicial</h3>
+            <a href="index.html">Ir a Home</a>
+            <br>
+            <h3>Enlace a la pagina de Internet</h3>
+            <a href="https://www.twitch.tv/">Ir a Twitch</a>
+            <br>
+            <h3>Enlace en una imagen</h3>
+            <a href="https://www.youtube.com"><img src="img/youtube.png" width="100px" alt="Imagen Youtube"
+                    class="py-3"></a>
+            <br>Enlace en una Pestaña Nueva</h3>
+            <br>
+            <p><a href="http://www.ies-azarquiel.es/" target="_blank">Pagina Web IES Azarquiel</a> <span class="pl-3">
+                    Para abrir un enlace en una nueva pestaña utilizamos el atributo <b class="tcgreen">target</b> y el
+                    valor <b class="tcgreen">_blank</b> </span> </p>
+            
+            <h3>Enlace para ejecutar un programa de javascript</h3>
+            <a href="javascript:alert('Hola mundo')">Ejecutar alert</a>
+            <h3>Enlace de descarga del plano de toledo</h3>
+                <a href="pdf/mapatoledo.pdf" target="_blank">Mapa de Toledo</a>
+            <h3>Enlace de marcador: Sirve para posicionarse en un lugar concreto de la web.</h3>
+                    <a href="#top"><img src="img/flechaar.png" width="50px" alt=""></a>
+        </div>
+    </main>
+    <footer class="position-relative">
+        <div class="row align-items-center justify-content-between">
+            <div id="linkedinfooter" class="col-2">
+                <a href="https://www.linkedin.com/in/adri%C3%A1n-s%C3%A1nchez-garc%C3%ADa-063ba6274/"
+                    target="_blank"><img src="img/linkedin.png" alt="Enlace Linkedin"></a>
+            </div>
+            <div id="namefooter" class="col-7">
+                <h1 class="text-center text-white py-3">&copy; Adrián Sánchez</h1>
+            </div>
+
+            <div id="codefooter" class="col-2">
+                <a href="https://code.visualstudio.com/" target="_blank"><img src="img/code_70x70.png"
+                        alt="Enlace Linkedin" width=""></a>
+            </div>
+
+            <div class="cb"></div>
+        </div>
+    </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

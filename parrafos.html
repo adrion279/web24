@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Párrafos en HTML5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-3"><img src="img/ASG.png" alt="logo" height="55px"></div>
+            <div class="col-9">
+                <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                <nav id="menu">
+                    <ul class="text-right">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="parrafos.html">
+                                Párrafos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="enlaces.html">
+                                Enlaces
+                            </a>
+                        </li>
+                        <li>
+                            <a href="listas.html">
+                                Listas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tablas.html">
+                                Tablas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="formularios.html">
+                                Formularios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="multimedia.html">
+                                Multimedia
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <div id="parrafos" class="container80 p-3">
+            <h2 class="text-center">PÁRRAFOS</h2>
+            <p>Un parrafo se crea con la etiqueta <b class="tcgreen">P</b></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt voluptatem, nisi, eos
+                repellat laborum eum itaque minus assumenda voluptas fugit magni placeat blanditiis doloribus
+                asperiores optio iusto commodi necessitatibus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt voluptatem, nisi, eos
+                repellat laborum eum itaque minus assumenda voluptas fugit magni placeat blanditiis doloribus
+                asperiores optio iusto commodi necessitatibus?<br />Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Debitis, temporibus. Veritatis, quam nostrum quibusdam mollitia, nulla maxime
+                suscipit magni aperiam placeat eos voluptatibus molestiae quaerat, accusamus repudiandae magnam
+                rem iusto?</p> <br>
+            <p>El parrafo anterior tiene una etiqueta <b class="tcgreen">br</b> para realizar un salto de linea</p><br>
+            <p>Par los encabezados utilizaremos las etiquetas: <b class="tcgreen">h1</b>,<b class="tcgreen">h2</b>,<b
+                    class="tcgreen">h3</b>,<b class="tcgreen">h4</b>,<b class="tcgreen">h5</b> y <b
+                    class="tcgreen">h6</b></p> <br>
+            <h1>Encabezado 1</h1>
+            <h2>Encabezado 2</h2>
+            <h3>Encabezado 3</h3>
+            <h4>Encabezado 4</h4>
+            <h5>Encabezado 5</h5>
+            <h6>Encabezado 6</h6>
+
+
+            <p>Para poner negrita utilizamos la etiqueta <b class="tcgreen">strong</b>, o la etiqueta <b
+                    class="tcgreen">b</b> y para cursiva <b class="tcgreen">em</b> <br />
+
+                Esto es una <strong>negrita</strong><br />
+                Esto es una <em>cursiva</em>
+            </p>
+            <p>Vamos a realizar superindices y subindices con las etiquetas <b class="tcgreen">sup</b> y <b
+                    class="tcgreen">sub </b> </p>
+            <p>Esto es un <sup>superindice</sup> y esto es un <sub>subindice</sub></p>
+            <p>Superindice: <b class="tcgreen">x<sup>2</sup></b> </p>
+            <p>Subindice: <b class="tcgreen">x<sub>2</sub></b> </p>
+            <p>Para realizar una abreviatura se utiliza la etiqueta <b class="tcgreen">abbr</b></p>
+            <p><abbr title="Organización de las Naciones Unidas">O.N.U.</abbr></p>
+            <p>En esta práctica hemos utilizado las dos etiquetas más relevantes. Una para realizar bloques
+                <b class="tcgreen">div</b> y otra para realizar cajas inline <b class="tcgreen">span</b>.
+            </p>
+        </div>
+    </main>
+    <footer class="position-relative">
+        <div class="row align-items-center justify-content-between">
+            <div id="linkedinfooter" class="col-2">
+                <a href="https://www.linkedin.com/in/adri%C3%A1n-s%C3%A1nchez-garc%C3%ADa-063ba6274/"
+                    target="_blank"><img src="img/linkedin.png" alt="Enlace Linkedin"></a>
+            </div>
+            <div id="namefooter" class="col-7">
+                <h1 class="text-center text-white py-3">&copy; Adrián Sánchez</h1>
+            </div>
+
+            <div id="codefooter" class="col-2">
+                <a href="https://code.visualstudio.com/" target="_blank"><img src="img/code_70x70.png"
+                        alt="Enlace Linkedin" width=""></a>
+            </div>
+
+            <div class="cb"></div>
+        </div>
+    </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

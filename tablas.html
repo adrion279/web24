@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-3"><img src="img/ASG.png" alt="logo" height="55px"></div>
+            <div class="col-9">
+                <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                <nav id="menu">
+                    <ul class="text-right">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="parrafos.html">
+                                Párrafos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="enlaces.html">
+                                Enlaces
+                            </a>
+                        </li>
+                        <li>
+                            <a href="listas.html">
+                                Listas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tablas.html">
+                                Tablas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="formularios.html">
+                                Formularios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="multimedia.html">
+                                Multimedia
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <div id="parrafos" class="container80 p-3">
+            <h2 class="text-center">Tablas</h2>
+            <div id="tablas" class="row  wrap align-items-center">
+
+                <div class="t1">
+                    <h3>Tabla de encabezado de fila</h3>
+                    <table border="2" class="tcenter">
+
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Go</th>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="t1">
+                    <h3>Tabla de encabezado de columna</h3>
+                    <table border="2">
+                        <tr>
+                            <th>File</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <th>Edit</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <th>Selection</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <th>View</th>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="t1">
+                    <h3>Tabla con combinaciones de celdas</h3>
+                    <table border="2">
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Go</th>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Celda</td>
+                            <td colspan="4">Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="t1">
+                    <h3>Tabla con diferente diseño en filas pares e impares</h3>
+                    <table id="tabladiseño" border="2">
+
+
+                        <tr class="impar">
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Go</th>
+                        </tr>
+
+                        <tr class="par">
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr class="impar">
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr class="par">
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="thorario" class="t2">
+                    <table border="" class="horario">
+                        <caption>
+                            <h2>Horario</h2>
+                        </caption>
+                        <tr>
+                            <th colspan="6" class="grupo">S1DAM</th>
+                        </tr>
+                        <tr>
+                            <th>/ &#0126; \</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                        <tr>
+                            <th>8:15<br />9:10</th>
+                            <td rowspan="2" class="bd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
+                            <td rowspan="2" class="prog">PROG<br>León Dí, JuEf<br>(1 B-302)</td>
+                            <td rowspan="2" class="sisi">SISI<br>Mart. Ru, To<br>(1 B-302)</td>
+                            <td rowspan="1" class="lm">LMSG<br>Puli. Mo, FrJo<br>(1 B-302)</td>
+                            <td rowspan="1" class="pimd">PIMD<br>León Dí, JuEf<br>(1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th>9:10<br />10:05</th>
+                            <td class="ipcg">IPCG<br>Guti Sa, JoÁn<br>(1 B-302)</td>
+                            <td class="ende">ENDE<br>Polo Or, Ed<br>(1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th>10:05<br />11:00</th>
+                            <td class="sasp">SASP<br>Gall. Cr, Di<br>(1 B-302)</td>
+                            <td class="dasp">DASP<br>Gall. Cr, Di<br>(1 B-302)</td>
+                            <td class="ipe">IPE<br>Marín Ca, RoMa<br>(1 B-302)</td>
+                            <td class="bd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
+                            <td class="ipe">IPE<br>Marín Ca, RoMa<br>(1 B-302)</td>
+                        </tr>
+                        <tr class="bg-grey-o">
+                            <th></th>
+                            <th colspan="5" class="">Recreo</th>
+                        </tr>
+                        <tr>
+                            <th>11:30<br />12:25</th>
+                            <td class="ipe">IPE<br>Marín Ca, RoMa<br>(1 B-302)</td>
+                            <td class="sisi" rowspan="2">SISI<br>Polo Or, Ed<br>(1 B-302)</td>
+                            <td rowspan="2" class="lm">LMSG<br>Puli. Mo, FrJo<br>(1 B-302)</td>
+                            <td class="bd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
+                            <td rowspan="2" class="prog">PROG<br>Reoy. He, ÓsAn<br>(1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th>12:25<br />13:20</th>
+                            <td rowspan="2" class="prog">PROG<br>Mart. Ca, JoJa<br>(1 B-302)</td>
+                            <td class="ende">ENDE<br>Polo Or, Ed<br>(1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th>13:20<br />14:15</th>
+                            
+                            <td class="bd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
+                            <td class="ipcg">IPCG<br>Guti Sa, JoÁn<br>(1 B-302)</td>
+                            <td rowspan="1" class="sisi">SISI<br>Mart. Ru, To<br>(1 B-302)</td>
+                            <td class="dasp">DASP<br>Gall. Cr, Di<br>(1 B-302)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </main>
+    <footer class="position-relative">
+        <div class="row align-items-center justify-content-between">
+            <div id="linkedinfooter" class="col-2">
+                <a href="https://www.linkedin.com/in/adri%C3%A1n-s%C3%A1nchez-garc%C3%ADa-063ba6274/"
+                    target="_blank"><img src="img/linkedin.png" alt="Enlace Linkedin"></a>
+            </div>
+            <div id="namefooter" class="col-7">
+                <h1 class="text-center text-white py-3">&copy; Adrián Sánchez</h1>
+            </div>
+
+            <div id="codefooter" class="col-2">
+                <a href="https://code.visualstudio.com/" target="_blank"><img src="img/code_70x70.png"
+                        alt="Enlace Linkedin" width=""></a>
+            </div>
+
+            <div class="cb"></div>
+        </div>
+    </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
